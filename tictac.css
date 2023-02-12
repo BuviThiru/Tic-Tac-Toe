@@ -1,0 +1,103 @@
+body{
+    margin:0;
+    padding:0.5rem;
+    height:100%;
+    width:100%;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:1rem;
+}
+
+.player-turn-container{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.tiles-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:40%;
+    height:50%;
+    margin:auto;
+    background-color: rgb(15, 109, 109);
+    border:1px solid black
+}
+
+.tiles{
+    border:1px solid black;
+    color:white;
+    cursor: pointer;
+    font-size: 5rem;
+    padding: 1rem; 
+    text-align:center ;
+    min-width:4rem;
+    min-height:8rem;
+    
+    
+}
+.playerX{
+    color:rgb(143, 26, 114);
+}
+
+.player0{
+    color:red;
+}
+.display {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+ 
+}
+.announceRes{
+   
+    margin:1rem;
+    padding:1rem;
+    font-size: 3rem;
+    align-items: center;
+    width:30vw;
+    margin:auto;
+    color:black
+}
+
+.btn-container{
+    display:flex;
+    justify-content: center;
+    margin:1rem;
+}
+
+.btn{
+    background-color: rgb(234, 100, 100);
+    color:white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.hide{
+    display:none;
+}
+
+@media screen and (max-width:600px){
+  h1{
+    font-size: 3rem;
+  }
+  .tiles{
+   
+    font-size: 2rem;
+   
+    min-width:2rem;
+    min-height:3rem;
+    
+}
+.tiles-container{  
+    width:80%;
+    height:80%;
+}}
